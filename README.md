@@ -1,14 +1,30 @@
 # mcp-starter-kit
 
-> Production-ready templates for building Model Context Protocol (MCP) servers in TypeScript and Python.
+Production-ready templates for building Model Context Protocol (MCP) servers in TypeScript and Python.
 
-**Status:** 🚧 Early stage — design and roadmap published, implementation in progress. Stars, issues and ideas welcome.
+> **Project status: planning. There is no working code in this repository yet.**
+> This README describes what the project will do. Nothing below can be installed or run today.
+> Features are ticked off in the checklist as they are built.
 
-## Why
+## What it is
 
-Building an MCP server means re-solving the same boilerplate: transport, auth, tool schemas, tests, packaging.
+A project templates and a generator.
+
+**The problem it solves:** Building an MCP server means re-solving the same boilerplate: transport, auth, tool schemas, tests, packaging.
+
+## Who it is for
+
+Developers who want to expose their own API, database or tool to AI agents through the Model Context Protocol (MCP).
+
+## How it will work
+
+1. You generate a new server project from a TypeScript or Python template.
+2. You replace the example tools with your own; transport, auth, tests and packaging are already wired up.
+3. You run the included tests, build the Docker image and publish the server.
 
 ## Planned features
+
+Unticked items are not built yet.
 
 - [ ] TypeScript and Python templates with example tools, resources and prompts
 - [ ] stdio and streamable HTTP transports
@@ -17,24 +33,17 @@ Building an MCP server means re-solving the same boilerplate: transport, auth, t
 - [ ] Dockerfile and publish-to-registry scripts
 - [ ] Checklist for tool naming and descriptions that models use well
 
-## Intended usage
+## Planned usage
 
+This is the intended interface, shown so you can judge the design. **It does not work yet**, and names may change before the first release.
+
+```bash
+npx degit narayana006/mcp-starter-kit/templates/typescript my-server
 ```
-npx create-mcp-server my-server --lang ts
-```
-
-_The interface above is the target design and may change._
-
-## Roadmap
-
-1. Core implementation of the first feature set
-2. Examples and tests
-3. CI and first tagged release
-4. Docs and integrations
 
 ## Contributing
 
-Contributions are welcome. Open an issue to discuss an idea or pick an unchecked item from the feature list.
+Feedback on the design is the most useful contribution right now. Open an issue to suggest a feature, question an approach or describe your use case. Code contributions are welcome once the first version lands.
 
 ## License
 

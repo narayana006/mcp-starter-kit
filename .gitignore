@@ -1,9 +1,13 @@
 node_modules/
-.next/
 dist/
 build/
+coverage/
 .env
 .env*.local
-.vercel/
-coverage/
+*.tsbuildinfo
 .DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
