@@ -45,6 +45,10 @@ npx degit narayana006/mcp-starter-kit/templates/typescript my-server
 
 Feedback on the design is the most useful contribution right now. Open an issue to suggest a feature, question an approach or describe your use case. Code contributions are welcome once the first version lands.
 
+## Author
+
+Built and maintained by [Narayana Vemburaj](https://github.com/narayana006).
+
 ## License
 
 [MIT](LICENSE)
